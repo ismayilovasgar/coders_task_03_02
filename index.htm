@@ -13,11 +13,13 @@
             background-color: #35384B;
         }
 
+
         * {
             box-sizing: border-box;
         }
 
         table {
+            border: 2px solid black;
             border-collapse: collapse;
             margin: 20px auto;
         }
@@ -43,7 +45,12 @@
         th,
         td {
             padding: 10px;
-            border: 1px solid black;
+            border: 2px solid black;
+        }
+
+
+        hr {
+            color: #A2E2CA;
         }
     </style>
 </head>
@@ -59,20 +66,22 @@
 
         <tbody>
             <tr>
-                <td>Şəkil Yükləyin</td>
-                <td colspan="2"><input type="file" name="file" id="file"></td>
+                <td><label for="file">Şəkil Yükləyin</label></td>
+                <td colspan="2">
+                    <input type="file" name="file" id="file">
+                </td>
             </tr>
             <tr>
-                <td>Ad</td>
+                <td><label for="name">Ad</label></td>
                 <td colspan="2"><input type="text" name="name" id="name" placeholder="Ad"></td>
             </tr>
             <tr>
-                <td>Soyad</td>
+                <td><label for="surname">Soyad</label></td>
                 <td colspan="2"><input type="text" name="surname" id="surname" placeholder="Soyad"></td>
             </tr>
             <tr>
-                <td>Doğum Tarixi</td>
-                <td colspan="2"><input type="date" name="date" id="date"></td>
+                <td><label for="birthdate">Doğum Tarixi</label></td>
+                <td colspan="2"><input type="date" name="birthdate" id="birthdate"></td>
             </tr>
             <tr>
                 <td>Cinsiyyət</td>
@@ -85,22 +94,22 @@
                 </td>
             </tr>
             <tr>
-                <td>Email</td>
+                <td><label for="email">Email</label></td>
                 <td colspan="2"><input type="email" name="email" id="email" placeholder="Emailinizi yazın"></td>
             </tr>
             <tr>
                 <td rowspan="3">Əlaqə</td>
             </tr>
             <tr>
-                <td class="tel">tel:</td>
-                <td><input type="tel" name="number1" id="number1" placeholder="phone"></td>
+                <td class="tel"><label for="tel1">tel:</label></td>
+                <td><input type="tel" name="tel1" id="tel1" placeholder="phone"></td>
             </tr>
             <tr>
-                <td class="tel">tel:</td>
-                <td><input type="tel" name="number2" id="number2" placeholder="phone"></td>
+                <td class="tel"><label for="tel2">tel:</label></td>
+                <td><input type="tel" name="tel2" id="tel2" placeholder="phone"></td>
             </tr>
             <tr>
-                <td>Təcrübələriniz</td>
+                <td><label for="experience">Təcrübələriniz</label></td>
                 <td colspan="2">
                     <textarea id="experience" name="experience" rows="3" cols="40"
                         placeholder="Təcrübələrinizi qeyd edin..."></textarea>
@@ -121,20 +130,36 @@
             </tr>
             <tr>
                 <td>Əsgərlik</td>
-                <td colspan="2">A</td>
+                <td colspan="2">
+                    <select name="military " id="military">
+                        <option value="volvo" selected>Xidmət olub</option>
+                        <option value="volvo">Xidmət olmayib</option>
+                    </select>
+                </td>
             </tr>
             <tr>
                 <td>Təhsili</td>
-                <td colspan="2">A</td>
+                <td colspan="2">
+                    <select name="education " id="education">
+                        <option value="ali" selected>Ali Təhsil </option>
+                        <option value="tamorta">Tam Orta Təhsil</option>
+                    </select>
+                </td>
             </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <td colspan="3">Təsdiq et</td>
+                <td colspan="3">
+                    <!-- <button type="submit">Təsdiq et</button> -->
+                    <input type="submit" value="Təsdiq et">
+                </td>
             </tr>
         </tfoot>
     </table>
+
+    <hr>
+    <hr>
 
 </body>
 
