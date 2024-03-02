@@ -31,6 +31,7 @@
         }
 
         tbody>tr>td:first-child:not(.tel) {
+            font-weight: bold;
             background-color: #B7E5B4;
         }
 
@@ -39,15 +40,25 @@
         }
 
         .tel {
+            font-weight: bold;
             background-color: #CCD3CB;
         }
 
         th,
         td {
-            padding: 10px;
+            padding: 10px 15px;
             border: 2px solid black;
+            text-align: center;
+            font-weight: bold;
         }
 
+        select {
+            padding: 4px 1px;
+        }
+
+        select:nth-child(2) {
+            width: 40px;
+        }
 
         hr {
             color: #A2E2CA;
@@ -66,8 +77,8 @@
 
         <tbody>
             <tr>
-                <td><label for="file">Şəkil Yükləyin</label></td>
-                <td colspan="2">
+                <td><label for="file">Şəkil yükləyin</label></td>
+                <td colspan="2" style="padding-left: 80px;">
                     <input type="file" name="file" id="file">
                 </td>
             </tr>
@@ -80,16 +91,16 @@
                 <td colspan="2"><input type="text" name="surname" id="surname" placeholder="Soyad"></td>
             </tr>
             <tr>
-                <td><label for="birthdate">Doğum Tarixi</label></td>
+                <td><label for="birthdate">Doğum tarixi</label></td>
                 <td colspan="2"><input type="date" name="birthdate" id="birthdate"></td>
             </tr>
             <tr>
                 <td>Cinsiyyət</td>
                 <td colspan="2">
-                    <label for="male"> Kişi</label>
-                    <input type="radio" name="gender" id="male">
+                    <label for="male"> kişi</label>
+                    <input type="radio" name="gender" id="male" style="margin-right: 55px;">
 
-                    <label for="female"> Qadın</label>
+                    <label for="female"> qadın</label>
                     <input type="radio" name="gender" id="female">
                 </td>
             </tr>
@@ -101,11 +112,11 @@
                 <td rowspan="3">Əlaqə</td>
             </tr>
             <tr>
-                <td class="tel"><label for="tel1">tel:</label></td>
+                <td class="tel"><label for="tel1">tel 1:</label></td>
                 <td><input type="tel" name="tel1" id="tel1" placeholder="phone"></td>
             </tr>
             <tr>
-                <td class="tel"><label for="tel2">tel:</label></td>
+                <td class="tel"><label for="tel2">tel 2:</label></td>
                 <td><input type="tel" name="tel2" id="tel2" placeholder="phone"></td>
             </tr>
             <tr>
@@ -132,15 +143,15 @@
                 <td>Əsgərlik</td>
                 <td colspan="2">
                     <select name="military " id="military">
-                        <option value="volvo" selected>Xidmət olub</option>
-                        <option value="volvo">Xidmət olmayib</option>
+                        <option value="volvo" selected>Xidmətdə olub</option>
+                        <option value="volvo">Xidmətdə olmayib</option>
                     </select>
                 </td>
             </tr>
             <tr>
                 <td>Təhsili</td>
                 <td colspan="2">
-                    <select name="education " id="education">
+                    <select name="education " id="education" style="width: 128px;">
                         <option value="ali" selected>Ali Təhsil </option>
                         <option value="tamorta">Tam Orta Təhsil</option>
                     </select>
