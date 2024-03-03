@@ -80,6 +80,23 @@
             border: 1px solid #B5C1D1;
             margin: 10px auto 30px auto;
         }
+
+        .checkbox-round {
+            width: 1.3em;
+            height: 1.3em;
+            background-color: white;
+            border-radius: 50%;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            appearance: none;
+            -webkit-appearance: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .checkbox-round:checked {
+            background-color: rgb(57, 211, 95);
+        }
     </style>
 </head>
 
@@ -152,13 +169,13 @@
                     <td>Xarici Dillər</td>
                     <td colspan="2">
                         <label for="eng"> İngilis dili</label>
-                        <input type="radio" name="eng" id="eng">
+                        <input type="checkbox" name="eng" id="eng" class="checkbox-round">
 
                         <label for="tur"> Türk dili</label>
-                        <input type="radio" name="tur" id="tur">
+                        <input type="checkbox" name="tur" id="tur" class="checkbox-round">
 
                         <label for="rus"> Rus dili</label>
-                        <input type="radio" name="rusF" id="rus">
+                        <input type="checkbox" name="rusF" id="rus" class="checkbox-round">
                     </td>
                 </tr>
                 <tr>
