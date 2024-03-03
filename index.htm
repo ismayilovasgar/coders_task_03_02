@@ -84,11 +84,11 @@
             </tr>
             <tr>
                 <td><label for="name">Ad</label></td>
-                <td colspan="2"><input type="text" name="name" id="name" placeholder="Ad"></td>
+                <td colspan="2"><input onkeydown="return /[a-z]/i.test(event.key)" type="text" name="name" id="name" placeholder="Ad"></td>
             </tr>
             <tr>
                 <td><label for="surname">Soyad</label></td>
-                <td colspan="2"><input type="text" name="surname" id="surname" placeholder="Soyad"></td>
+                <td colspan="2"><input onkeydown="return /[a-z]/i.test(event.key)" type="text" name="surname" id="surname" placeholder="Soyad"></td>
             </tr>
             <tr>
                 <td><label for="birthdate">Doğum tarixi</label></td>
@@ -114,7 +114,7 @@
             </tr>
             <tr>
                 <td class="tel"><label for="tel1">tel 1:</label></td>
-                <td><input type="tel" name="tel1" id="tel1" placeholder="phone"></td>
+                <td><input  type="tel" name="tel1" id="tel1" placeholder="phone"></td>
             </tr>
             <tr>
                 <td class="tel"><label for="tel2">tel 2:</label></td>
