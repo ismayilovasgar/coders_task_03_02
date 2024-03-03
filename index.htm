@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Əsgər_İsmayılov_task_03_02</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0px;
             padding: 0px;
@@ -13,9 +17,16 @@
             background-color: #35384B;
         }
 
+        #color-box1 {
+            width: 100vw;
+            height: 8vh;
+            background-color: #282828;
+        }
 
-        * {
-            box-sizing: border-box;
+        #color-box2 {
+            width: 100vw;
+            height: 4vh;
+            background-color: #3C3C3B;
         }
 
         table {
@@ -61,14 +72,21 @@
         }
 
         hr {
-            color: #A2E2CA;
+            border: 1px solid #B7E5B4;
+        }
+
+        iframe {
+            display: block;
+            border: 1px solid #B5C1D1;
+            margin: 10px auto 30px auto;
         }
     </style>
 </head>
 
 <body>
-
-    <table border="1" cellspacing="0" cellpadding="0">
+    <div id="color-box1">&nbsp;</div>
+    <div id="color-box2">&nbsp;</div>
+    <table cellspacing="0" cellpadding="0">
         <thead>
             <tr>
                 <th colspan="3">Müraciət et</th>
@@ -84,11 +102,13 @@
             </tr>
             <tr>
                 <td><label for="name">Ad</label></td>
-                <td colspan="2"><input onkeydown="return /[a-z]/i.test(event.key)" type="text" name="name" id="name" placeholder="Ad"></td>
+                <td colspan="2"><input onkeydown="return /[a-z]/i.test(event.key)" type="text" name="name" id="name"
+                        placeholder="Ad"></td>
             </tr>
             <tr>
                 <td><label for="surname">Soyad</label></td>
-                <td colspan="2"><input onkeydown="return /[a-z]/i.test(event.key)" type="text" name="surname" id="surname" placeholder="Soyad"></td>
+                <td colspan="2"><input onkeydown="return /[a-z]/i.test(event.key)" type="text" name="surname"
+                        id="surname" placeholder="Soyad"></td>
             </tr>
             <tr>
                 <td><label for="birthdate">Doğum tarixi</label></td>
@@ -113,11 +133,11 @@
                 <td rowspan="3">Əlaqə</td>
             </tr>
             <tr>
-                <td class="tel"><label for="tel1">tel 1:</label></td>
-                <td><input  type="tel" name="tel1" id="tel1" placeholder="phone"></td>
+                <td class="tel"><label for="tel1">tel:</label></td>
+                <td><input type="tel" name="tel1" id="tel1" placeholder="phone"></td>
             </tr>
             <tr>
-                <td class="tel"><label for="tel2">tel 2:</label></td>
+                <td class="tel"><label for="tel2">tel:</label></td>
                 <td><input type="tel" name="tel2" id="tel2" placeholder="phone"></td>
             </tr>
             <tr>
@@ -169,9 +189,15 @@
             </tr>
         </tfoot>
     </table>
+    <hr>
+    <hr>
 
-    <hr>
-    <hr>
+    <h2 style="margin: 20px auto; text-align: center;">Bizim Haqqimizda</h2>
+
+    <iframe alt="naxcivanin batabat tebiet videosu" class="myframe" width="800" height="460"
+        src="https://www.youtube.com/embed/nMgD_X0Cgg8" style="border:0;" allowfullscreen="true"
+        allowpaymentrequest="false" loading="eager">
+    </iframe>
 
 </body>
 
